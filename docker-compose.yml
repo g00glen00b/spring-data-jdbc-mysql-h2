@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: dbpass
+      MYSQL_DATABASE: demo
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    ports:
+      - "3306:3306"

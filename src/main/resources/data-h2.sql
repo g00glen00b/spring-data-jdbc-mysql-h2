@@ -1,0 +1,1 @@
+insert into person (name) values ('John Doe'), ('Jane Doe');
